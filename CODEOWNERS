@@ -1,0 +1,25 @@
+# ======================================================
+# GHEVERHAN Commerce Platform
+# CODEOWNERS
+# ======================================================
+
+# Default Owner
+* @mrifatsyauqi
+
+# Documentation
+/docs/ @mrifatsyauqi
+
+# Frontend
+/frontend/ @mrifatsyauqi
+
+# Backend
+/backend/ @mrifatsyauqi
+
+# GitHub Configuration
+/.github/ @mrifatsyauqi
+
+# Scripts
+/scripts/ @mrifatsyauqi
+
+# Docker
+/docker/ @mrifatsyauqi
