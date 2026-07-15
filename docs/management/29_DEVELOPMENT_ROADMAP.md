@@ -71,10 +71,15 @@ Fokus MVP adalah menghasilkan nilai bisnis secepat mungkin.
 ## Foundation
 
 - Authentication
-- Authorization
-- Settings
-- Media
-- User Management
+- Customer Account
+- Product Catalog
+- Product Search
+- Shopping Cart
+- Checkout
+- Payment
+- Shipping
+- Order Management
+- Notifications
 
 ---
 
