@@ -1,46 +1,77 @@
+# GHEVERHAN Commerce Platform
+
 # Security Policy
 
-## Purpose
+Version: 2.0
 
-This document describes how security vulnerabilities should be reported for the GHEVERHAN Commerce Platform.
+Status: Approved
 
-Security is a top priority for this project.
+Owner: Engineering Team
 
----
-
-# Supported Versions
-
-| Version | Supported |
-|----------|-----------|
-| v1.x | ✅ |
-| Older Versions | ❌ |
-
-Only the latest stable version receives security updates.
+Last Updated: 2026-07-16
 
 ---
 
-# Reporting a Vulnerability
+# 1. Purpose
+
+This document defines the security policy for the GHEVERHAN Commerce Platform.
+
+It explains how security vulnerabilities should be reported, investigated, and resolved while protecting users, business operations, and confidential information.
+
+---
+
+# 2. Security Philosophy
+
+GHEVERHAN follows these security principles:
+
+- Secure by Default
+- Least Privilege
+- Defense in Depth
+- Zero Trust
+- Responsible Disclosure
+- Continuous Improvement
+
+Security is considered throughout the entire software development lifecycle.
+
+---
+
+# 3. Supported Versions
+
+| Version | Status |
+|----------|--------|
+| Latest Stable | ✅ Supported |
+| Previous Stable | ⚠ Security Fixes Only |
+| Older Versions | ❌ Not Supported |
+
+Only supported versions receive security updates.
+
+---
+
+# 4. Reporting a Vulnerability
 
 If you discover a security vulnerability:
 
-- Do NOT create a public GitHub Issue.
-- Do NOT disclose the vulnerability publicly.
-- Report it privately to the project maintainer.
+DO NOT:
 
-Include:
+- Open a public GitHub Issue.
+- Publish proof-of-concept exploits.
+- Share confidential information publicly.
 
-- Description
+Instead:
+
+Report privately to the project maintainer with:
+
+- Vulnerability description
+- Affected component
 - Steps to reproduce
-- Expected behavior
-- Actual behavior
-- Possible impact
-- Suggested fix (optional)
+- Potential impact
+- Suggested mitigation (optional)
 
 ---
 
-# Response Process
+# 5. Security Response Workflow
 
-Every report will follow this workflow.
+Security reports follow this process:
 
 Report
 
@@ -54,11 +85,11 @@ Risk Assessment
 
 ↓
 
-Fix
+Fix Development
 
 ↓
 
-Testing
+Security Testing
 
 ↓
 
@@ -66,57 +97,147 @@ Release
 
 ↓
 
-Public Disclosure (if applicable)
+Public Disclosure (if appropriate)
 
 ---
 
-# Scope
+# 6. Severity Levels
 
-Security reports include:
+Critical
+
+- Remote Code Execution
+- Authentication Bypass
+- Database Exposure
+
+High
+
+- Privilege Escalation
+- SQL Injection
+- XSS affecting authenticated users
+
+Medium
+
+- Information Disclosure
+- CSRF
+- Session Issues
+
+Low
+
+- Minor configuration issues
+- Low-risk information leakage
+
+Severity determines response priority.
+
+---
+
+# 7. Scope
+
+This policy covers:
 
 - Authentication
 - Authorization
-- Payment
-- API
-- Session
+- REST API
+- Database
+- Payment Integration
+- Shipping Integration
 - File Upload
-- SQL Injection
-- XSS
-- CSRF
-- Remote Code Execution
-- Sensitive Data Exposure
+- Session Management
+- Admin Panel
+- CMS
+- Website Builder
 
 ---
 
-# Out of Scope
+# 8. Out of Scope
 
-The following are generally not considered security issues:
+Generally excluded:
 
-- UI bugs
-- Typographical errors
-- Performance issues
+- UI inconsistencies
 - Browser compatibility issues
+- Performance optimization requests
+- Feature requests
 
-Unless they introduce a security impact.
-
----
-
-# Security Principles
-
-GHEVERHAN follows:
-
-- Least Privilege
-- Secure by Default
-- Defense in Depth
-- Zero Trust
-- Responsible Disclosure
-
-See:
-
-docs/engineering/26_SECURITY.md
+Unless they directly introduce security risks.
 
 ---
 
-# Acknowledgement
+# 9. Responsible Disclosure
 
-We appreciate responsible disclosure and constructive collaboration in improving the security of GHEVERHAN Commerce Platform.
+Contributors are expected to:
+
+- Report vulnerabilities responsibly.
+- Allow reasonable time for fixes.
+- Avoid public disclosure before resolution.
+
+---
+
+# 10. Secure Development
+
+All development must follow:
+
+- docs/engineering/26_SECURITY.md
+- docs/management/30_CODING_STANDARDS.md
+- docs/management/31_AI_DEVELOPMENT_GUIDE.md
+
+---
+
+# 11. Confidential Information
+
+Never commit:
+
+- .env files
+- API Keys
+- Database Passwords
+- Access Tokens
+- Private Certificates
+- Production Credentials
+
+Use environment variables for all sensitive configuration.
+
+---
+
+# 12. Dependencies
+
+Third-party packages should:
+
+- Come from trusted sources.
+- Be actively maintained.
+- Receive regular security updates.
+
+Avoid introducing unnecessary dependencies.
+
+---
+
+# 13. Security Checklist
+
+Before deployment:
+
+- Authentication verified.
+- Authorization verified.
+- Input validation implemented.
+- Output encoding reviewed.
+- File upload restrictions applied.
+- Sensitive data protected.
+- Error messages sanitized.
+
+---
+
+# 14. Related Documents
+
+- CONTRIBUTING.md
+- CODE_OF_CONDUCT.md
+- docs/engineering/26_SECURITY.md
+- docs/engineering/27_DEPLOYMENT.md
+- docs/engineering/28_TESTING_QA.md
+
+---
+
+# 15. Revision History
+
+| Version | Date | Description |
+|----------|------|-------------|
+| 2.0 | 2026-07-16 | Final Security Policy |
+
+---
+
+END OF DOCUMENT
