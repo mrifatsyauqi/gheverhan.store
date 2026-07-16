@@ -1,0 +1,99 @@
+# ==========================================================
+# GHEVERHAN Commerce Platform
+# Git Attributes
+# ==========================================================
+
+# ==========================================================
+# Default
+# ==========================================================
+
+* text=auto eol=lf
+
+# ==========================================================
+# Source Code
+# ==========================================================
+
+*.php         text diff=php
+*.blade.php   text
+*.js          text
+*.jsx         text
+*.ts          text
+*.tsx         text
+*.json        text
+*.yml         text
+*.yaml        text
+*.xml         text
+*.html        text
+*.css         text
+*.scss        text
+*.sass        text
+*.md          text
+*.sql         text
+*.env.example text
+*.sh          text eol=lf
+
+# ==========================================================
+# Windows Scripts
+# ==========================================================
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# ==========================================================
+# Binary Files
+# ==========================================================
+
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.svg  text
+
+*.ico binary
+
+*.pdf binary
+
+*.zip binary
+*.rar binary
+*.7z  binary
+*.tar binary
+*.gz  binary
+
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.eot binary
+
+*.mp3 binary
+*.wav binary
+*.ogg binary
+
+*.mp4 binary
+*.mov binary
+*.avi binary
+*.webm binary
+
+# ==========================================================
+# Lock Files
+# ==========================================================
+
+package-lock.json text
+composer.lock text
+pnpm-lock.yaml text
+yarn.lock text
+
+# ==========================================================
+# GitHub
+# ==========================================================
+
+.github/** text
+
+# ==========================================================
+# Docker
+# ==========================================================
+
+Dockerfile text
+docker-compose.yml text
+docker-compose.yaml text

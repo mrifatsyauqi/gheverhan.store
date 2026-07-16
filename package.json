@@ -1,0 +1,8 @@
+{
+  "name": "gheverhan-store",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "packages/*"
+  ]
+}
